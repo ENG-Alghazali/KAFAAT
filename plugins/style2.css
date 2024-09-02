@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #e7ddec;
+  color: #fff;
+}
+
+/* html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #e3d8e8;
+} */
+
+.A {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.A .box1 {
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.box1 .quote i {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #176feb
+}
+
+.A .box1 .image1 {
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #176feb;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.box1 .image1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.box1 p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box1 .name_job1 {
+  margin: 10px 0 3px 0;
+  color: #176feb;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rating1 i {
+  font-size: 18px;
+  color: #176feb;
+  margin-bottom: 5px;
+}
+
+.btns1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btns1 button {
+  background: #176feb;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #176feb;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #176feb;
+  transition: all 0.3s linear;
+}
+
+.btns1 button:first-child {
+  background: none;
+  margin-right: 5px;
+}
+
+.btns1 button:last-child {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.btns1 button:first-child:hover {
+  background: #176feb;
+  color: #fff;
+}
+
+.btns1 button:hover {
+  color: #fff;
+}
+
+@media (max-width:1045px) {
+  .A .box1 {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:710px) {
+  .A .box1 {
+    width: 100%;
+  }
+}
